@@ -1,1 +1,26 @@
-It's HTML!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"><h1>00:00:00</h1></div>
+    <div id="greeting" class="hide"></div>
+    <div id="login-form" >
+        <form>
+            <input 
+            type="text"
+            required
+            maxlength="15"
+            placeholder="What is your name?">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="src/clock.js"></script>
+</body>
+</html>
