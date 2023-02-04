@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <title>Document</title>
+    <title>Momentum App</title>
 </head>
 <body>
-    <div id="clock"><h1>00:00:00</h1></div>
-    <div id="greeting" class="hide"></div>
-    <div id="login-form" >
-        <form>
-            <input 
-            type="text"
-            required
-            maxlength="15"
-            placeholder="What is your name?">
-            <button type="submit">Login</button>
-        </form>
+    <div id="clock"><h2>00:00:00</h2></div>
+    <form id="login-form" class="hide">
+        <input 
+        type="text"
+        required
+        maxlength="15"
+        placeholder="What is your name?">
+        <button type="submit">Login</button>
+    </form>
+    <div><h1 id="greeting" class="hide"></h1></div>
+
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+
+    <ul id="todo-list"></ul>
+
+    <div>
+        <span></span>
+        <span></span>
     </div>
     <script src="src/index.js"></script>
     <script src="src/clock.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/background.js"></script>
 </body>
 </html>
